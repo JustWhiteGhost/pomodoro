@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import Svg, { Path, Circle, Rect, Line } from 'react-native-svg';
+import Svg, { Path, Circle, Rect, Line, Polygon } from 'react-native-svg';
 
 export const ListIcon = ({ color, size }) => (
   <Svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2">
@@ -43,5 +43,13 @@ export const HelpCircleIcon = ({ color, size }) => (
     <Circle cx="12" cy="12" r="10" />
     <Path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
     <Line x1="12" y1="17" x2="12.01" y2="17" />
+  </Svg>
+);
+
+export const MusicIcon = ({ color, size }) => (
+  <Svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2">
+    <Path d="M9 18V5l12-2v13" />
+    <Circle cx="6" cy="18" r="3" />
+    <Circle cx="18" cy="16" r="3" />
   </Svg>
 );
